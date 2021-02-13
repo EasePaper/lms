@@ -12,7 +12,10 @@
 
 
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <link href="css/login.css" rel="stylesheet" />
+    <script src="Custom-js/Login.js"></script>
 
  
    
@@ -65,7 +68,7 @@
                                             <div><a href="#" class="small text-right">Forgot password?</a></div>
                                         </div>
                                     </div>
-                                    <a href="Dashboard.aspx" type="submit" class="btn btn-block btn-primary" id="frmSubmit" runat="server" >Sign in</a>
+                                    <a href="#" type="submit" class="btn btn-block btn-primary" id="frmSubmit" runat="server" onclick="LoginCheck()">Sign in</a>
                                 </form>
                                
                             

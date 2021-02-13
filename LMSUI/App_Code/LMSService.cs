@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.Web.Services;
 
 /// <summary>
@@ -27,4 +31,43 @@ public class LMSService : System.Web.Services.WebService
         return "Hello World";
     }
 
+    [WebMethod]
+    public string LoginCheck(string UserName,string Password)
+    {
+        string jsondata = "";
+        if(UserName == "admin")
+        {
+            jsondata = "Success";
+        }
+        else
+        {
+            jsondata = "Failed";
+        }
+        //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnStringDb"].ConnectionString.ToString());
+
+        //DataTable dt = new DataTable();
+
+        //SqlCommand cmd = new SqlCommand();
+        //SqlDataAdapter da1 = new SqlDataAdapter(cmd);
+
+        //DataSet ds1 = new DataSet();
+        return jsondata;
+    }
+
+    private string DataTableToJSONWithJavaScriptSerializer(DataTable table)
+    {
+        JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
+        List<Dictionary<string, object>> parentRow = new List<Dictionary<string, object>>();
+        Dictionary<string, object> childRow;
+        foreach (DataRow row in table.Rows)
+        {
+            childRow = new Dictionary<string, object>();
+            foreach (DataColumn col in table.Columns)
+            {
+                childRow.Add(col.ColumnName, row[col]);
+            }
+            parentRow.Add(childRow);
+        }
+        return jsSerializer.Serialize(parentRow);
+    }
 }
