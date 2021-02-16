@@ -65,7 +65,7 @@
                                            
                                                 </label>
                                             </div>
-                                            <div><a href="#" class="small text-right">Forgot password?</a></div>
+                                            <div><a href="ForgotPassword.aspx" class="small text-right">Forgot password?</a></div>
                                         </div>
                                     </div>
                                     <a href="#" type="submit" class="btn btn-block btn-primary" id="frmSubmit" runat="server" onclick="LoginCheck()">Sign in</a>

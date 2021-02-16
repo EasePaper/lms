@@ -13,7 +13,6 @@
 
 
     <script src="https://kit.fontawesome.com/1497d0decf.js" crossorigin="anonymous"></script>
-    [
 
     <link href="css/JQmap.css" rel="stylesheet" />
     <link href="css/weather-icons.css" rel="stylesheet" />
@@ -23,6 +22,15 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/components.css" />
     <link href="css/Global.css" rel="stylesheet" />
+       <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#sidemenu").load("SideMenu.aspx");
+            //$("#navbar").load("NavMenu.aspx");
+
+        });
+    </script>
 
 </head>
 <body>
@@ -44,7 +52,7 @@
                         </a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-title">Last Logged in 5 min ago</div>
-                                <a href="features-profile.html" class="dropdown-item has-icon">
+                                <a href="UserAccount.aspx" class="dropdown-item has-icon">
                                    <i class="fas fa-user-circle"></i>Account
                                 </a>
 
@@ -56,37 +64,8 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="main-sidebar">
-                    <aside id="sidebar-wrapper">
-                            <div class="sidebar-brand">
-                            <a href="#">
-                                <img src="img/Jmax.png" class="imgmax" /></a>
-                        </div>
-                        <div class="sidebar-brand sidebar-brand-sm">
-                            <a href="#">
-                                <img src="img/Jmin.png" class="imgmin" /></a>
-                        </div>
-                        <ul class="sidebar-menu">
-                            <li class="menu-header">Dashboard</li>
-                
-                            <li class="nav-item dropdown active">
-                                <a href="Dashboard.aspx" class="nav-link"><i class="fas fa-bullseye"></i><span>Dashboard</span></a>
-
-                            </li>
-                            <li class="menu-header">Control Panel</li>
-                            <li class="nav-item "><a href="ProjectDetails.aspx" class="nav-link"><i class="fas fa-atom"></i><span>Project</span></a> </li>
-                            <li><a class="nav-link" href="SiteDetails.aspx"><i class="fas fa-sitemap"></i><span>Multi-Site</span></a></li>
-                            <li class="nav-item active"><a href="InventoryManagement.aspx" class="nav-link"><i class="fab fa-hive"></i><span>Inventory</span></a> </li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-users-cog"></i><span>User Management</span></a></li>
-                            <li class="menu-header">System</li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-layer-group"></i><span>Grouping</span></a></li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-wifi"></i><span>Network</span></a></li>
-
-                            <li class="menu-header">Automation</li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-sliders-h"></i><span>Controller</span></a></li>
-                            <li><a class="nav-link" href="blank.html"><i class="fab fa-stack-overflow"></i><span>Work Order</span></a></li>
-                        </ul>
-                    </aside>
+                <div class="main-sidebar" id="sidemenu">
+                  
                 </div>
                 <!-- Main Content -->
                 <div class="main-content">

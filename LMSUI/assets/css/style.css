@@ -919,15 +919,19 @@ select.form-control:not([size]):not([multiple]) {
     border-top: none; }
   .table:not(.table-sm):not(.table-md):not(.dataTable) td,
   .table:not(.table-sm):not(.table-md):not(.dataTable) th {
-    padding: 0 25px;
+    padding: 0 5px;
     height: 60px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    text-align:center;
+  }
   .table:not(.table-sm) thead th {
     border-bottom: none;
     background-color: rgba(0, 0, 0, 0.04);
     color: #666;
     padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    font-size:12px;
+  }
   .table.table-md th,
   .table.table-md td {
     padding: 10px 15px; }
@@ -1520,7 +1524,7 @@ h6 .badge {
 
 /* 3.18 Navbar */
 .navbar {
-  height: 20px;
+  /*height: 20px;*/
   left: 250px;
   right: 5px;
   position: absolute;
@@ -2867,7 +2871,7 @@ body.layout-3 .main-footer {
 .main-content {
   padding-left: 280px;
   padding-right: 30px;
-  padding-top: 70px;
+  padding-top: 80px;
   width: 100%;
   position: relative; }
 

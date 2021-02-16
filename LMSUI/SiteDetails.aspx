@@ -11,10 +11,8 @@
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
+ 
     <script src="https://kit.fontawesome.com/1497d0decf.js" crossorigin="anonymous"></script>
-    [
 
     <link href="css/JQmap.css" rel="stylesheet" />
     <link href="css/weather-icons.css" rel="stylesheet" />
@@ -24,11 +22,14 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/components.css" />
     <link href="css/Global.css" rel="stylesheet" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript">
-        function update() {
+        $(function () {
+            $("#sidemenu").load("SideMenu.aspx");
+            //$("#navbar").load("NavMenu.aspx");
 
-            $('#edit').modal('hide');
-        }
+        });
     </script>
 </head>
 <body>
@@ -50,7 +51,7 @@
                         </a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-title">Last Logged in 5 min ago</div>
-                                <a href="features-profile.html" class="dropdown-item has-icon">
+                                <a href="UserAccount.aspx" class="dropdown-item has-icon">
                                     <i class="fas fa-user-circle"></i>Account
                                 </a>
 
@@ -62,36 +63,8 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="main-sidebar">
-                    <aside id="sidebar-wrapper">
-                        <div class="sidebar-brand">
-                            <a href="#">
-                                <img src="img/Jmax.png" class="imgmax" /></a>
-                        </div>
-                        <div class="sidebar-brand sidebar-brand-sm">
-                            <a href="#">
-                                <img src="img/Jmin.png" class="imgmin" /></a>
-                        </div>
-                        <ul class="sidebar-menu">
-                            <li class="menu-header">Dashboard</li>
-                            <li class="nav-item dropdown ">
-                                <a href="Dashboard.aspx" class="nav-link"><i class="fas fa-bullseye"></i><span>Dashboard</span></a>
-
-                            </li>
-                            <li class="menu-header">Control Panel</li>
-                            <li class="nav-item "><a href="ProjectDetails.aspx" class="nav-link"><i class="fas fa-atom"></i><span>Project</span></a> </li>
-                            <li class="nav-item active"><a href="SiteDetails.aspx"><i class="fas fa-sitemap"></i><span>Multi-Site</span></a></li>
-                            <li class="nav-item dropdown"><a href="#" class="nav-link"><i class="fab fa-hive"></i><span>Inventory</span></a> </li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-users-cog"></i><span>User Management</span></a></li>
-                            <li class="menu-header">System</li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-layer-group"></i><span>Grouping</span></a></li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-wifi"></i><span>Network</span></a></li>
-
-                            <li class="menu-header">Automation</li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-sliders-h"></i><span>Controller</span></a></li>
-                            <li><a class="nav-link" href="blank.html"><i class="fab fa-stack-overflow"></i><span>Work Order</span></a></li>
-                        </ul>
-                    </aside>
+                         <div class="main-sidebar" id="sidemenu">
+                  
                 </div>
                 <!-- Main Content -->
                 <div class="main-content">
@@ -216,14 +189,19 @@
         <div class="modal fade" id="addSite" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                    <div class="modal-header"> 
                         <h4 class="modal-title custom_align" id="Headings">Add Site</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
+                    
                     </div>
                     <div class="modal-body">
-
+                    
                         <div class="form-group">
                             <input class="form-control " type="text" placeholder="Name" />
+                        </div>
+                            <div class="form-group">
+
+                            <input class="form-control " type="text" placeholder="Address" />
                         </div>
                         <div class="form-group">
 
@@ -232,6 +210,7 @@
                         <div class="form-group">
                             <input class="form-control " type="text" placeholder="District" />
                         </div>
+
                         <div class="form-group">
                             <input class="form-control " type="text" placeholder="State" />
                         </div>
@@ -253,7 +232,7 @@
 
                     </div>
                     <div class="modal-footer modalcenter">
-                        <button type="button" class="btn btn-Custom0 " data-dismiss="modal">Update <i class="fa fa-check" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-Custom0 " data-dismiss="modal">Add <i class="fa fa-check" aria-hidden="true"></i></button>
                     </div>
         </div>
         <!-- /.modal-content -->
@@ -264,17 +243,19 @@
         <div class="modal fade" id="addroad" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                        <h4 class="modal-title custom_align" id="">Add Project</h4>
+                    <div class="modal-header"> 
+                        <h4 class="modal-title custom_align" id="">Add Road</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
+                    
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
                             <input class="form-control " type="text" placeholder="Road Name" />
                         </div>
-                        <div class="form-group">
-
-                            <input class="form-control " type="text" placeholder="Road Details" />
+                           <div class="form-group">
+                             <select class="form-control">
+                                <option>Select Site</option>
+                            </select>
                         </div>
 
                     </div>
@@ -292,17 +273,18 @@
         <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                    <div class="modal-header"> 
                         <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
+      
                     </div>
                     <div class="modal-body">
                         Are you sure you want to delete this Site Details?
 
                     </div>
                     <div class="modal-footer ">
-                        <button type="button" class="btn btn-Custom1" data-dismiss="modal"><i class="fa fa-check" aria-hidden="true"></i>Yes</button>
-                        <button type="button" class="btn btn-Custom0" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>No</button>
+              <button type="button" class="btn btn-Custom1" data-dismiss="modal">Yes <i class="fa fa-check" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-Custom0" data-dismiss="modal">No <i class="fa fa-times" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <!-- /.modal-content -->
