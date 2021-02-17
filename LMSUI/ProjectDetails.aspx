@@ -323,13 +323,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="../assets/js/stisla.js"></script>
 
-    <!-- JS Libraies -->
-    <script src="js/sparkline.js"></script>
-    <script src="js/Chart.js"></script>
-    <script src="js/jquery-vmap.js"></script>
-    <script src="js/jqueryMap.js"></script>
-    <script src="js/SummerNote.js"></script>
-    <script src="js/JqueryChoco.js"></script>
+  
     <!-- Template JS File -->
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/custom.js"></script>

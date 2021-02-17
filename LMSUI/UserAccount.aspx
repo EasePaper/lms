@@ -76,37 +76,37 @@
 
 
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right;">
-                                        <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#ChangePassword" >Change Password </a>
+                                        <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#ChangePassword">Change Password </a>
                                     </p>
                                 </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
 
 
-                                        <div class="form-group">
-                                            <input class="form-control " type="text" placeholder=" Name" />
-                                        </div>
-                                        <div class="form-group">
-
-                                            <input class="form-control " type="text" placeholder="Emp ID" />
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input class="form-control " type="text" placeholder="Mobile" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control " type="text" placeholder="Email" />
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="form-control">
-                                                <option>Select Usertype</option>
-                                            </select>
-                                        </div>
-
+                                    <div class="form-group">
+                                        <input class="form-control " type="text" placeholder=" Name" />
                                     </div>
+                                    <div class="form-group">
+
+                                        <input class="form-control " type="text" placeholder="Emp ID" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control " type="text" placeholder="Mobile" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control " type="text" placeholder="Email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Select Usertype</option>
+                                        </select>
+                                    </div>
+
                                 </div>
-                            
+                            </div>
+
 
                         </div>
                     </section>
@@ -125,30 +125,30 @@
             </div>
         </div>
 
-         <div class="modal fade" id="ChangePassword" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+        <div class="modal fade" id="ChangePassword" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">  
+                    <div class="modal-header">
                         <h4 class="modal-title custom_align" id="headingNetwork">Change Password</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
-                     
+
                     </div>
                     <div class="modal-body">
-                 
-                              <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="Old Password" />
-                                </div>
-                              <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="New Password" />
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="Confirm Password" />
-                                </div>
-                              
-                                   
-                           
-                           
-                        
+
+                        <div class="form-group">
+                            <input class="form-control " type="text" placeholder="Old Password" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control " type="text" placeholder="New Password" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control " type="text" placeholder="Confirm Password" />
+                        </div>
+
+
+
+
+
                     </div>
                     <div class="modal-footer modalcenter">
                         <button type="button" class="btn btn-Custom0 " id="addnetwork" data-dismiss="modal">Confirm <i class="fa fa-check" aria-hidden="true"></i></button>
@@ -168,13 +168,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="../assets/js/stisla.js"></script>
 
-    <!-- JS Libraies -->
-    <script src="js/sparkline.js"></script>
-    <script src="js/Chart.js"></script>
-    <script src="js/jquery-vmap.js"></script>
-    <script src="js/jqueryMap.js"></script>
-    <script src="js/SummerNote.js"></script>
-    <script src="js/JqueryChoco.js"></script>
     <!-- Template JS File -->
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/custom.js"></script>

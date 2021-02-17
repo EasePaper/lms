@@ -232,7 +232,7 @@
 
                     </div>
                     <div class="modal-footer modalcenter">
-                        <button type="button" class="btn btn-Custom0 " data-dismiss="modal">Add <i class="fa fa-check" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-Custom0 " data-dismiss="modal">Add <i class="fa fa-plus" aria-hidden="true"></i></button>
                     </div>
         </div>
         <!-- /.modal-content -->

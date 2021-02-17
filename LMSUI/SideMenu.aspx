@@ -1,5 +1,4 @@
-﻿
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SideMenu.aspx.cs" Inherits="SideMenu" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SideMenu.aspx.cs" Inherits="SideMenu" %>
 
 <!DOCTYPE html>
 
@@ -24,48 +23,48 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/components.css" />
     <link href="css/Global.css" rel="stylesheet" />
-   <script type="text/javascript">
-       var selector = '.nav-item li';
+    <script type="text/javascript">
+        var selector = '.nav-item li';
 
-       $(selector).on('click', function () {
-           $(selector).removeClass('active');
-           $(this).addClass('active');
-       });
-   </script>
+        $(selector).on('click', function () {
+            $(selector).removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <aside id="sidebar-wrapper">
-                            <div class="sidebar-brand">
-                            <a href="#">
-                                <img src="img/Jmax.png" class="imgmax" /></a>
-                        </div>
-                        <div class="sidebar-brand sidebar-brand-sm">
-                            <a href="#">
-                                <img src="img/Jmin.png" class="imgmin" /></a>
-                        </div>
-                        <ul class="sidebar-menu">
-                            <li class="menu-header">Dashboard</li>
-                
-                            <li class="nav-item dropdown">
-                                <a href="Dashboard.aspx" class="nav-link"><i class="fas fa-bullseye"></i><span>Dashboard</span></a>
+                <div class="sidebar-brand">
+                    <a href="#">
+                        <img src="img/Jmax.png" class="imgmax" /></a>
+                </div>
+                <div class="sidebar-brand sidebar-brand-sm">
+                    <a href="#">
+                        <img src="img/Jmin.png" class="imgmin" /></a>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="menu-header">Dashboard</li>
 
-                            </li>
-                            <li class="menu-header">Control Panel</li>
-                            <li class="nav-item "><a href="ProjectDetails.aspx" class="nav-link"><i class="fas fa-atom"></i><span>Project</span></a> </li>
-                            <li><a class="nav-link" href="SiteDetails.aspx"><i class="fas fa-sitemap"></i><span>Multi-Site</span></a></li>
-                            <li class="nav-item"><a href="InventoryManagement.aspx" class="nav-link"><i class="fab fa-hive"></i><span>Inventory</span></a> </li>
-                            <li><a class="nav-link" href="UserManagement.aspx"><i class="fas fa-users-cog"></i><span>User Management</span></a></li>
-                            <li class="menu-header">System</li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-layer-group"></i><span>Grouping</span></a></li>
-                            <li><a class="nav-link" href="NetworkManagement.aspx"><i class="fas fa-wifi"></i><span>Network</span></a></li>
+                    <li class="nav-item dropdown">
+                        <a href="Dashboard.aspx" class="nav-link"><i class="fas fa-bullseye"></i><span>Dashboard</span></a>
 
-                            <li class="menu-header">Automation</li>
-                            <li><a class="nav-link" href="blank.html"><i class="fas fa-sliders-h"></i><span>Controller</span></a></li>
-                            <li><a class="nav-link" href="blank.html"><i class="fab fa-stack-overflow"></i><span>Work Order</span></a></li>
-                        </ul>
-                    </aside>
+                    </li>
+                    <li class="menu-header">Control Panel</li>
+                    <li class="nav-item "><a href="ProjectDetails.aspx" class="nav-link"><i class="fas fa-atom"></i><span>Project</span></a> </li>
+                    <li><a class="nav-link" href="SiteDetails.aspx"><i class="fas fa-sitemap"></i><span>Multi-Site</span></a></li>
+                    <li class="nav-item"><a href="InventoryManagement.aspx" class="nav-link"><i class="fab fa-hive"></i><span>Inventory</span></a> </li>
+                    <li><a class="nav-link" href="UserManagement.aspx"><i class="fas fa-users-cog"></i><span>User Management</span></a></li>
+                    <li class="menu-header">System</li>
+                    <li><a class="nav-link" href="Grouping.aspx"><i class="fas fa-layer-group"></i><span>Grouping</span></a></li>
+                    <li><a class="nav-link" href="NetworkManagement.aspx"><i class="fas fa-wifi"></i><span>Network</span></a></li>
+
+                    <li class="menu-header">Automation</li>
+                    <li><a class="nav-link" href="CtrlMgmt.aspx"><i class="fas fa-sliders-h"></i><span>Controller</span></a></li>
+                    <li><a class="nav-link" href="blank.html"><i class="fab fa-stack-overflow"></i><span>Work Order</span></a></li>
+                </ul>
+            </aside>
         </div>
     </form>
 </body>

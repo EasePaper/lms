@@ -221,7 +221,7 @@
                         </div>
                     </div>
                     <div class="modal-footer modalcenter">
-                        <button type="button" class="btn btn-Custom0 " id="addnetwork" data-dismiss="modal">Add <i class="fa fa-check" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-Custom0 " id="addnetwork" data-dismiss="modal">Add <i class="fa fa-plus" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <!-- /.modal-content -->
@@ -259,14 +259,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
-    <!-- JS Libraies -->
-    <script src="js/sparkline.js"></script>
-    <script src="js/Chart.js"></script>
-    <script src="js/jquery-vmap.js"></script>
-    <script src="js/jqueryMap.js"></script>
-    <script src="js/SummerNote.js"></script>
-    <script src="js/JqueryChoco.js"></script>
 
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/custom.js"></script>
