@@ -31,8 +31,8 @@
         }
 
             .nav-tabs .nav-item .nav-link.active {
-                color: #1c314c !important;
-                border-color: #1c314c !important;
+                color: #78828a !important;
+                border-color: #78828a !important;
                 border-top-color: #f4f6f9 !important;
                 border-left-color: #f4f6f9 !important;
                 border-right-color: #f4f6f9 !important;

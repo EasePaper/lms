@@ -48,7 +48,7 @@
                     <li class="menu-header">Dashboard</li>
 
                     <li class="nav-item dropdown">
-                        <a href="Dashboard.aspx" class="nav-link"><i class="fas fa-bullseye"></i><span>Dashboard</span></a>
+                        <a href="CtrlMgmt.aspx" class="nav-link"><i class="fas fa-bullseye"></i><span>Dashboard</span></a>
 
                     </li>
                     <li class="menu-header">Control Panel</li>
@@ -61,8 +61,8 @@
                     <li><a class="nav-link" href="NetworkManagement.aspx"><i class="fas fa-wifi"></i><span>Network</span></a></li>
 
                     <li class="menu-header">Automation</li>
-                    <li><a class="nav-link" href="CtrlMgmt.aspx"><i class="fas fa-sliders-h"></i><span>Controller</span></a></li>
-                    <li><a class="nav-link" href="blank.html"><i class="fab fa-stack-overflow"></i><span>Work Order</span></a></li>
+                    <%--<li><a class="nav-link" href="CtrlMgmt.aspx"><i class="fas fa-sliders-h"></i><span>Controller</span></a></li>--%>
+                    <li><a class="nav-link" href="blank.html"><i class="fab fa-stack-overflow"></i><span>Maintanance</span></a></li>
                 </ul>
             </aside>
         </div>
