@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Projects &mdash; LMS</title>
+    <title>Network &mdash; LMS</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -64,7 +64,7 @@
                 <!-- Main Content -->
                 <div class="main-content">
                     <section class="section">
-                        <div class="container" id="col">
+                        <div class="container col-md-11 col-lg-11" id="col">
                             <div class="row" id="sitemng">
                                 <div class="col-md-12">
                                     <h4 class="alignheading"><span>Network Details    </span>
@@ -72,8 +72,16 @@
                                     <!--Section: Block Content-->
 
 
-                                    <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right;">
-                                        <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#addNetwork" onclick="c()">Add Network <i class="fas fa-plus"></i></a>
+                                    <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
+                                        <div class="dropdown">
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Filter 1</a>
+                                                <a class="dropdown-item" href="#">Filter 2</a>
+                                                <a class="dropdown-item" href="#">Filter 3</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" data-title="Edit" data-toggle="modal" data-target="#addNetwork" onclick="c()">Add Network <i class="fas fa-plus"></i></a>
+                                        <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 5px; margin-bottom: 10px;"><i class="fas fa-filter"></i></a>
                                     </p>
                                     <div class="table-responsive">
                                         <table id="mytable" class="table table-bordred table-striped">
@@ -101,25 +109,21 @@
 
                                                 <tr>
 
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
+                                                    <td>LoRa</td>
+                                                <td>10.56.186.45</td>
+                                                <td>Entrance</td>
+                                                <td>JIO</td>
+                                                <td>10.45.124.12</td>
+                                                <td>10.56 N</td>
+                                                <td>56.76 S</td>
+                                                <td>Single</td>
+                                                <td>15s</td>
+                                                <td>M34543F</td>
+                                                <td>784556</td>
+                                                <td>Wireless</td>
+                                                <td>Secure</td>
+                                                <td>1524</td>
+                                               
 
                                                     <td>
                                                         <p data-placement="top" data-toggle="tooltip" title="Edit">
@@ -160,60 +164,61 @@
         <div class="modal fade" id="addNetwork" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">  
+                    <div class="modal-header">
                         <h4 class="modal-title custom_align" id="headingNetwork">Add Network</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
-                     
+
                     </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input class="form-control " type="text" placeholder="Network Name" />
-                                </div>
-                                <div class="form-group">
-
-                                    <input class="form-control " type="text" placeholder="Network ID" />
-                                </div>
+                                </div>                                
                                 <div class="form-group">
                                     <select class="form-control">
                                         <option>Select Road</option>
                                     </select>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="SIM" />
-                                </div>
+                                </div>                                
                                 <div class="form-group">
                                     <input class="form-control " type="text" placeholder="IP" />
                                 </div>
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="Latitude" />
-                                </div>
-                                <div class="form-group">
+                                 <div class="form-group">
                                     <input class="form-control " type="text" placeholder="Longitude" />
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="Heartbeat package" />
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control " type="text" placeholder="Heartbeat Cycle" />
                                 </div>
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="Device SN" />
-                                </div>
-                                <div class="form-group">
+                                 <div class="form-group">
                                     <input class="form-control " type="text" placeholder="Installed Number" />
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="Channel" />
                                 </div>
                                 <div class="form-group">
                                     <select class="form-control">
                                         <option>Select Protocol</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input class="form-control " type="text" placeholder="Network ID" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control " type="text" placeholder="SIM" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control " type="text" placeholder="Latitude" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control " type="text" placeholder="Heartbeat package" />
+                                </div>                                
+                                <div class="form-group">
+                                    <input class="form-control " type="text" placeholder="Device SN" />
+                                </div>
+                               
+                                <div class="form-group">
+                                    <input class="form-control " type="text" placeholder="Channel" />
+                                </div>                                
                                 <div class="form-group">
                                     <input class="form-control " type="text" placeholder="Port" />
                                 </div>
@@ -235,10 +240,10 @@
         <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"> 
+                    <div class="modal-header">
                         <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
-                       
+
                     </div>
                     <div class="modal-body">
                         Are you sure you want to delete this Network Details?

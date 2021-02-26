@@ -6,12 +6,12 @@
 <head runat="server">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Projects &mdash; LMS</title>
+    <title>Multi-Site &mdash; LMS</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
- 
+
     <script src="https://kit.fontawesome.com/1497d0decf.js" crossorigin="anonymous"></script>
 
     <link href="css/JQmap.css" rel="stylesheet" />
@@ -63,13 +63,12 @@
                         </li>
                     </ul>
                 </nav>
-                         <div class="main-sidebar" id="sidemenu">
-                  
+                <div class="main-sidebar" id="sidemenu">
                 </div>
                 <!-- Main Content -->
                 <div class="main-content">
                     <section class="section">
-                        <div class="container">
+                        <div class="container col-md-11 col-lg-11">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h4 class="alignheading"><span>Multi-Site Information    </span>
@@ -78,39 +77,47 @@
 
 
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right;">
-                                        <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#addSite">Add Site <i class="fas fa-plus"></i></a>
+                                        <div class="dropdown">
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Filter 1</a>
+                                                <a class="dropdown-item" href="#">Filter 2</a>
+                                                <a class="dropdown-item" href="#">Filter 3</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-Custom0 btn-xs  fa-pull-right" data-title="Edit" data-toggle="modal" data-target="#addSite">Add Site <i class="fas fa-plus"></i></a>
+                                        <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 5px; margin-bottom: 10px;"><i class="fas fa-filter"></i></a>
                                     </p>
                                     <div class="table-responsive">
                                         <table id="mytable" class="table table-bordred table-striped">
                                             <thead>
                                                 <th>Name</th>
+                                                <th>Project</th>
                                                 <th>Address</th>
                                                 <th>Area</th>
                                                 <th>District</th>
                                                 <th>State</th>
                                                 <th>Country</th>
                                                 <th>Time Zone</th>
-                                                <th>Project</th>
+
+
                                                 <th>Edit</th>
 
                                                 <th>Delete</th>
 
                                             </thead>
                                             <tbody>
-
                                                 <tr>
+                                                    <td>Guindy</td>
+                                                    <td>Anna Univ</td>
+                                                    <td>Chinnamalai</td>
+                                                    <td>Guindy</td>
+                                                    <td>Chennai</td>
+                                                    <td>Tamil Nadu</td>
+                                                    <td>India</td>
 
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
+                                                    <td>GMT 5:30+</td>
 
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
 
                                                     <td>
                                                         <p data-placement="top" data-toggle="tooltip" title="Edit">
@@ -130,7 +137,7 @@
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row" style="padding-top:50px;">
                                 <div class="col-md-12">
                                     <h4 class="alignheading"><span>Road Information    </span>
                                     </h4>
@@ -138,20 +145,30 @@
 
 
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right;">
-                                        <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#addroad">Add Road <i class="fas fa-plus"></i></a>
+                                        <div class="dropdown">
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Filter 1</a>
+                                                <a class="dropdown-item" href="#">Filter 2</a>
+                                                <a class="dropdown-item" href="#">Filter 3</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" data-title="Edit" data-toggle="modal" data-target="#addroad">Add Road <i class="fas fa-plus"></i></a>
+                                        <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 5px; margin-bottom: 10px;"><i class="fas fa-filter"></i></a>
                                     </p>
                                     <div class="table-responsive">
                                         <table id="mytable" class="table table-bordred table-striped">
                                             <thead>
                                                 <th>Road Name</th>
                                                 <th>Site Name</th>
+                                                <th>Project</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Road 1</td>
+                                                    <td>Entrance</td>
                                                     <td>Guindy</td>
+                                                    <td>Anna Univ</td>
                                                     <td>
                                                         <p data-placement="top" data-toggle="tooltip" title="Edit">
                                                             <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#addroad"><i class="fas fa-edit"></i></a>
@@ -189,17 +206,22 @@
         <div class="modal fade" id="addSite" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"> 
+                    <div class="modal-header">
                         <h4 class="modal-title custom_align" id="Headings">Add Site</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
-                    
+
                     </div>
                     <div class="modal-body">
-                    
+
                         <div class="form-group">
                             <input class="form-control " type="text" placeholder="Name" />
                         </div>
-                            <div class="form-group">
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Select Project</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
 
                             <input class="form-control " type="text" placeholder="Address" />
                         </div>
@@ -215,7 +237,7 @@
                             <input class="form-control " type="text" placeholder="State" />
                         </div>
                         <div class="form-group">
-                          <select class="form-control">
+                            <select class="form-control">
                                 <option>India</option>
                             </select>
                         </div>
@@ -224,18 +246,14 @@
                                 <option>Select Timezone</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                             <select class="form-control">
-                                <option>Select Project</option>
-                            </select>
-                        </div>
+
 
                     </div>
                     <div class="modal-footer modalcenter">
                         <button type="button" class="btn btn-Custom0 " data-dismiss="modal">Add <i class="fa fa-plus" aria-hidden="true"></i></button>
                     </div>
-        </div>
-        <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-content -->
             </div>
             <!-- /.modal-dialog -->
         </div>
@@ -243,20 +261,26 @@
         <div class="modal fade" id="addroad" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"> 
+                    <div class="modal-header">
                         <h4 class="modal-title custom_align" id="">Add Road</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
-                    
+
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
                             <input class="form-control " type="text" placeholder="Road Name" />
                         </div>
-                           <div class="form-group">
-                             <select class="form-control">
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Select Project</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
                                 <option>Select Site</option>
                             </select>
                         </div>
+
 
                     </div>
                     <div class="modal-footer modalcenter">
@@ -273,17 +297,17 @@
         <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"> 
+                    <div class="modal-header">
                         <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
-      
+
                     </div>
                     <div class="modal-body">
                         Are you sure you want to delete this Site Details?
 
                     </div>
                     <div class="modal-footer ">
-              <button type="button" class="btn btn-Custom1" data-dismiss="modal">Yes <i class="fa fa-check" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-Custom1" data-dismiss="modal">Yes <i class="fa fa-check" aria-hidden="true"></i></button>
                         <button type="button" class="btn btn-Custom0" data-dismiss="modal">No <i class="fa fa-times" aria-hidden="true"></i></button>
                     </div>
                 </div>

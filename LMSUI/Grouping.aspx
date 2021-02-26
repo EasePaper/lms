@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Projects &mdash; LMS</title>
+    <title>Grouping &mdash; LMS</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -37,7 +37,6 @@
             margin-left: -10px !important;
             width: 102% !important;
         }
-        
     </style>
 </head>
 <body>
@@ -76,14 +75,14 @@
                 <!-- Main Content -->
                 <div class="main-content">
                     <section class="section">
-                        <div class="container">
+                        <div class="container col-md-11 col-lg-11">
                             <div class="row">
                                 <div class="col-md-12">
                                 </div>
                             </div>
                         </div>
                         <section class="section">
-                            <div class="container" id="col">
+                            <div class="container col-md-11 col-lg-11" id="col">
                                 <div class="row" id="sitemng">
                                     <div class="col-md-12">
                                         <h4 class="alignheading"><span>Grouping </span>
@@ -91,8 +90,16 @@
                                         <!--Section: Block Content-->
 
 
-                                        <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right;">
-                                            <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#addgroup">Add Group <i class="fas fa-plus"></i></a>
+                                        <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
+                                            <div class="dropdown">
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Filter 1</a>
+                                                    <a class="dropdown-item" href="#">Filter 2</a>
+                                                    <a class="dropdown-item" href="#">Filter 3</a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" data-title="Edit" data-toggle="modal" data-target="#addgroup">Add Group <i class="fas fa-plus"></i></a>
+                                            <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 5px; margin-bottom: 10px;"><i class="fas fa-filter"></i></a>
                                         </p>
                                         <div class="table-responsive">
                                             <table id="mytable" class="table table-bordred table-striped">
@@ -107,13 +114,13 @@
                                                 <tbody>
 
                                                     <tr>
-                                                        <td>Sample</td>
-                                                        <td>Sample</td>
-                                                        <td>Sample</td>
+                                                        <td>East Block</td>
+                                                        <td>Guindy</td>
+                                                        <td>Entrance</td>
 
                                                         <td>
                                                             <p data-placement="top" data-toggle="tooltip" title="Edit">
-                                                                <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#addgroup" ><i class="fas fa-edit"></i></a>
+                                                                <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#addgroup"><i class="fas fa-edit"></i></a>
                                                             </p>
                                                         </td>
                                                         <td>
@@ -158,18 +165,14 @@
 
                 </div>
                 <div class="modal-body">
-
-
                     <div class="form-group">
                         <input class="form-control " type="text" placeholder=" Name" />
                     </div>
                     <div class="form-group">
-
                         <input class="form-control " type="text" placeholder="Site" />
                     </div>
-
                     <div class="form-group">
-                        <input class="form-control " type="text" placeholder="Road Section" />
+                        <input class="form-control " type="text" placeholder="Tags" />
                     </div>
                 </div>
                 <div class="modal-footer modalcenter">

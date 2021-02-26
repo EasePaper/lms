@@ -7,7 +7,7 @@
 <head runat="server">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Projects &mdash; LMS</title>
+    <title>My Profile &mdash; LMS</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -67,8 +67,8 @@
                 <!-- Main Content -->
                 <div class="main-content">
                     <section class="section">
-                        <div class="container">
-                            <div class="row">
+                        <div class="container col-md-11 col-lg-11">
+                            <div class="row" style="padding-top:30px">
                                 <div class="col-md-4">
                                     <h4 class="alignheading"><span>My Profile</span>
                                     </h4>
@@ -102,6 +102,9 @@
                                         <select class="form-control">
                                             <option>Select Usertype</option>
                                         </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-Custom0 " data-dismiss="modal">Update <i class="fas fa-check"></i></button>
                                     </div>
 
                                 </div>

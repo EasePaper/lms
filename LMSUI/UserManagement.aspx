@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Projects &mdash; LMS</title>
+    <title>User Management &mdash; LMS</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,7 +25,7 @@
         $(function () {
             $("#sidemenu").load("SideMenu.aspx");
             //$("#navbar").load("NavMenu.aspx");
-            
+
         });
     </script>
 </head>
@@ -34,7 +34,7 @@
         <div id="app">
             <div class="main-wrapper">
                 <div class="navbar-bg"></div>
-                  <nav class="navbar navbar-expand-lg main-navbar">
+                <nav class="navbar navbar-expand-lg main-navbar">
                     <ul class="navbar-nav mr-3">
                         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
                         <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
@@ -43,13 +43,13 @@
 
 
                         <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                          <i class="fas fa-user-circle" style="font-size:20px;"></i> &nbsp;&nbsp;
+                            <i class="fas fa-user-circle" style="font-size: 20px;"></i>&nbsp;&nbsp;
                             <div class="d-sm-none d-lg-inline-block">Hi, Admin</div>
                         </a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-title">Last Logged in 5 min ago</div>
                                 <a href="UserAccount.aspx" class="dropdown-item has-icon">
-                                   <i class="fas fa-user-circle"></i>Account
+                                    <i class="fas fa-user-circle"></i>Account
                                 </a>
 
                                 <div class="dropdown-divider"></div>
@@ -60,14 +60,13 @@
                         </li>
                     </ul>
                 </nav>
-             
+
                 <div class="main-sidebar" id="sidemenu">
-           
                 </div>
                 <!-- Main Content -->
                 <div class="main-content">
-                       <section class="section">
-                        <div class="container" id="col">
+                    <section class="section">
+                        <div class="container col-md-11 col-lg-11" id="col">
                             <div class="row" id="sitemng">
                                 <div class="col-md-12">
                                     <h4 class="alignheading"><span>User Details    </span>
@@ -75,9 +74,17 @@
                                     <!--Section: Block Content-->
 
 
-                                    <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right;">
-                                        <a href="#" class="btn btn-Custom0 btn-xs" data-title="Edit" data-toggle="modal" data-target="#addUser" onclick="c()">Add User <i class="fas fa-plus"></i></a>
-                                    </p>
+                                    <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
+                                        <div class="dropdown">
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Filter 1</a>
+                                                <a class="dropdown-item" href="#">Filter 2</a>
+                                                <a class="dropdown-item" href="#">Filter 3</a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" data-title="Edit" data-toggle="modal" data-target="#addUser" onclick="c()">Add User <i class="fas fa-plus"></i></a>
+                                        <a href="#" class="btn btn-Custom0 btn-xs fa-pull-right" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 5px; margin-bottom: 10px;"><i class="fas fa-filter"></i></a>
+                                        </p>
                                     <div class="table-responsive">
                                         <table id="mytable" class="table table-bordred table-striped">
                                             <thead>
@@ -86,7 +93,8 @@
                                                 <th>Mobile</th>
                                                 <th>Email</th>
                                                 <th>User Type</th>
-                                                  <th>Edit</th>
+                                                <th>User Status</th>
+                                                <th>Edit</th>
                                                 <th>Delete</th>
 
                                             </thead>
@@ -94,13 +102,13 @@
 
                                                 <tr>
 
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
+                                                    <td>Raj</td>
+                                                    <td>J564</td>
 
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-                                                    <td>Sample</td>
-                                                  
+                                                    <td>989878885</td>
+                                                    <td>rajr@jomeitec.co</td>
+                                                    <td>Engineer</td>
+                                                    <td>Active</td>
 
                                                     <td>
                                                         <p data-placement="top" data-toggle="tooltip" title="Edit">
@@ -137,40 +145,44 @@
                 </footer>
             </div>
         </div>
-          <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+        <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">  
+                    <div class="modal-header">
                         <h4 class="modal-title custom_align" id="headingNetwork">Add User</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
-                     
+
                     </div>
                     <div class="modal-body">
-                  
-                           
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder=" Name" />
-                                </div>
-                                <div class="form-group">
+                        <div class="form-group">
+                            <input class="form-control " type="text" placeholder=" Name" />
+                        </div>
+                        <div class="form-group">
 
-                                    <input class="form-control " type="text" placeholder="Emp ID" />
-                                </div>
-                            
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="Mobile" />
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control " type="text" placeholder="Email" />
-                                </div>
-                                    <div class="form-group">
-                                    <select class="form-control">
-                                        <option>Select Usertype</option>
-                                    </select>
-                                </div>
-                             
-                            
-                           
-                        
+                            <input class="form-control " type="text" placeholder="Emp ID" />
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control " type="text" placeholder="Mobile" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control " type="text" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Select Usertype</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Status</option>
+                            </select>
+                        </div>
+
+
+
+
+
                     </div>
                     <div class="modal-footer modalcenter">
                         <button type="button" class="btn btn-Custom0 " id="addnetwork" data-dismiss="modal">Add <i class="fa fa-plus" aria-hidden="true"></i></button>
@@ -187,10 +199,10 @@
         <div class="modal fade" id="deleteUser" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"> 
+                    <div class="modal-header">
                         <h4 class="modal-title custom_align" id="Heading">Delete this User</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-remove" aria-hidden="true"></span></button>
-                       
+
                     </div>
                     <div class="modal-body">
                         Are you sure you want to delete this User Details?
@@ -216,7 +228,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="../assets/js/stisla.js"></script>
 
-   
+
     <!-- Template JS File -->
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/custom.js"></script>

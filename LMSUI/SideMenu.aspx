@@ -62,7 +62,8 @@
 
                     <li class="menu-header">Automation</li>
                     <%--<li><a class="nav-link" href="CtrlMgmt.aspx"><i class="fas fa-sliders-h"></i><span>Controller</span></a></li>--%>
-                    <li><a class="nav-link" href="blank.html"><i class="fab fa-stack-overflow"></i><span>Maintanance</span></a></li>
+                    <li><a class="nav-link" href="Maintenance.aspx"><i class="fab fa-stack-overflow"></i><span>Maintenance</span></a></li>
+                    <li><a class="nav-link" href="Config.aspx"><i class="fas fa-sliders-h"></i><span>Configuration</span></a></li>
                 </ul>
             </aside>
         </div>

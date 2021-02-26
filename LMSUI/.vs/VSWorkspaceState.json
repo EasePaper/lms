@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\dev",
-    "\\dev\\rtl",
-    "\\sources"
+    "\\App_Code"
   ],
+  "SelectedNode": "\\ProjectDetails.aspx",
   "PreviewInSolutionExplorer": false
 }
