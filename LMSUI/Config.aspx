@@ -42,7 +42,7 @@
                 <nav class="navbar navbar-expand-lg main-navbar">
                     <ul class="navbar-nav mr-3">
                         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+                     
                     </ul>
                     <ul class="navbar-nav navbar-right">
 
@@ -77,7 +77,7 @@
                                 </div>
                             </div>
                             <div class="row" style="padding-bottom:30px;">
-                                <div class="col-xl-6 col-lg-6 col-sm-6 mb-3">
+                                <div class="col-xl-6 col-lg-6 col-sm-12 mb-3">
                                     <h5 class="alignheading"><span>Ticket Type</span></h5>
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
                                         <div class="dropdown">
@@ -122,7 +122,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-xl-6  col-lg-6 col-sm-6 mb-3"  style="padding-left:50px;">
+                                <div class="col-xl-6  col-lg-6 col-sm-12 mb-3" >
                                     <h5 class="alignheading"><span>Ticket Sub Type</span></h5>
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
                                         <div class="dropdown">
@@ -172,7 +172,7 @@
                             </div>
 
                             <div class="row" style="padding-bottom:30px;">
-                                <div class="col-xl-6 col-lg-6 col-sm-6 mb-3">
+                                <div class="col-xl-6 col-lg-6 col-sm-12 mb-3">
                                     <h5 class="alignheading"><span>Ticket Saved Reply</span></h5>
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
                                         <div class="dropdown">
@@ -221,7 +221,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-xl-6  col-lg-6 col-sm-6 mb-3"  style="padding-left:50px;">
+                                <div class="col-xl-6  col-lg-6 col-sm-12 mb-3"  >
                                     <h5 class="alignheading"><span>Ticket Status</span></h5>
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
                                         <div class="dropdown">
@@ -273,7 +273,7 @@
                             </div>
 
                             <div class="row" style="padding-bottom:30px;">
-                                <div class="col-xl-6 col-lg-6 col-sm-6 mb-3">
+                                <div class="col-xl-6 col-lg-6 col-sm-12 mb-3">
                                     <h5 class="alignheading"><span>Ticket Team</span></h5>
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
                                         <div class="dropdown">
@@ -323,7 +323,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-xl-6  col-lg-6 col-sm-6 mb-3"  style="padding-left:50px;">
+                                <div class="col-xl-6  col-lg-6 col-sm-12 mb-3"  >
                                     <h5 class="alignheading"><span>Ticket Labels</span></h5>
                                     <p data-placement="top" data-toggle="Ad Project" title="Add" style="float: right; float: right; display: inline-flex; margin-bottom: 15px;">
                                         <div class="dropdown">
@@ -388,7 +388,7 @@
                         2.3.0
        
                     </div>
-                </footer>
+                </footer> 
             </div>
         </div>
 

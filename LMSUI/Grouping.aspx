@@ -1,12 +1,13 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Grouping.aspx.cs" Inherits="Grouping" %>
 
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Grouping &mdash; LMS</title>
+    <title>Project &mdash; LMS</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,6 +15,7 @@
 
 
     <script src="https://kit.fontawesome.com/1497d0decf.js" crossorigin="anonymous"></script>
+
 
     <link href="css/JQmap.css" rel="stylesheet" />
     <link href="css/weather-icons.css" rel="stylesheet" />
@@ -37,17 +39,70 @@
             margin-left: -10px !important;
             width: 102% !important;
         }
+
+        #tags {
+            float: left;
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-family: Arial;
+               border-radius: .25rem;
+        }
+
+            #tags > span {
+                cursor: pointer;
+                display: block;
+                float: left;
+                color: #fff;
+                background: #dea138;
+                padding: 5px;
+                padding-right: 25px;
+                margin: 4px;
+                   border: 1px solid #ced4da;
+                     border-radius: 1.25rem;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            }
+
+                #tags > span:hover {
+                    opacity: 0.7;
+                }
+
+                #tags > span:after {
+                    position: absolute;
+                    content: "×";
+                
+                    padding: 2px 5px;
+                    margin-left: 3px;
+                    font-size: 11px;
+                }
+
+            #tags > input {
+                background-color: #fdfdff;
+                border-color: #e4e6fc;
+                border: 0;
+                font-size: 14px;
+                padding: 10px 15px;
+                height: 42px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+             
+              
+            }
+
+        
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+      <form id="form1" runat="server">
         <div id="app">
             <div class="main-wrapper">
                 <div class="navbar-bg"></div>
                 <nav class="navbar navbar-expand-lg main-navbar">
                     <ul class="navbar-nav mr-3">
                         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+                       
                     </ul>
                     <ul class="navbar-nav navbar-right">
 
@@ -75,14 +130,14 @@
                 <!-- Main Content -->
                 <div class="main-content">
                     <section class="section">
-                        <div class="container col-md-11 col-lg-11">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
                                 </div>
                             </div>
                         </div>
                         <section class="section">
-                            <div class="container col-md-11 col-lg-11" id="col">
+                            <div class="container" id="col">
                                 <div class="row" id="sitemng">
                                     <div class="col-md-12">
                                         <h4 class="alignheading"><span>Grouping </span>
@@ -114,9 +169,9 @@
                                                 <tbody>
 
                                                     <tr>
-                                                        <td>East Block</td>
-                                                        <td>Guindy</td>
-                                                        <td>Entrance</td>
+                                                        <td>Sample</td>
+                                                        <td>Sample</td>
+                                                        <td>Sample</td>
 
                                                         <td>
                                                             <p data-placement="top" data-toggle="tooltip" title="Edit">
@@ -171,9 +226,13 @@
                     <div class="form-group">
                         <input class="form-control " type="text" placeholder="Site" />
                     </div>
-                    <div class="form-group">
-                        <input class="form-control " type="text" placeholder="Tags" />
+
+                    <div id="tags" style="width:100%">
+
+                        <input type="text" class="form-control" value="" placeholder="Tags" />
                     </div>
+
+
                 </div>
                 <div class="modal-footer modalcenter">
                     <button type="button" class="btn btn-Custom0 " id="addnetwork" data-dismiss="modal">Add <i class="fa fa-plus" aria-hidden="true"></i></button>
@@ -205,17 +264,39 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="../assets/js/stisla.js"></script>
 
+
+    <!-- Template JS File -->
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/custom.js"></script>
 
+    <script type="text/javascript">
+        $(function () { // DOM ready
+
+            // ::: TAGS BOX
+
+            $("#tags input").on({
+                focusout: function () {
+                    var txt = this.value.replace(/[^a-z0-9\+\-\.\#]/ig, ''); // allowed characters
+                    if (txt) $("<span/>", { text: txt.toLowerCase(), insertBefore: this });
+                    this.value = "";
+                },
+                keyup: function (ev) {
+                    // if: comma|enter (delimit more keyCodes with | pipe)
+                    if (/(188|13)/.test(ev.which)) $(this).focusout();
+                }
+            });
+            $('#tags').on('click', 'span', function () {
+                if (confirm("Remove " + $(this).text() + "?")) $(this).remove();
+            });
+
+        });
+    </script>
 </body>
 </html>
-

@@ -8,12 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <title>Projects &mdash; LMS</title>
 
-    <!-- General CSS Files -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
-    <script src="https://kit.fontawesome.com/1497d0decf.js" crossorigin="anonymous"></script>
+ 
 
     <link href="css/JQmap.css" rel="stylesheet" />
     <link href="css/weather-icons.css" rel="stylesheet" />
@@ -34,7 +29,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+
             <aside id="sidebar-wrapper">
                 <div class="sidebar-brand">
                     <a href="#">
@@ -66,7 +61,7 @@
                     <li><a class="nav-link" href="Config.aspx"><i class="fas fa-sliders-h"></i><span>Configuration</span></a></li>
                 </ul>
             </aside>
-        </div>
+        
     </form>
 </body>
 </html>

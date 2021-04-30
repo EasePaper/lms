@@ -4,8 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport"/>
     <title>Network &mdash; LMS</title>
 
     <!-- General CSS Files -->
@@ -15,16 +15,29 @@
 
     <script src="https://kit.fontawesome.com/1497d0decf.js" crossorigin="anonymous"></script>
 
+    <link href="css/JQmap.css" rel="stylesheet" />
+    <link href="css/weather-icons.css" rel="stylesheet" />
+    <link href="css/icons-wind.css" rel="stylesheet" />
+    <link href="css/Summernote.css" rel="stylesheet" />
     <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/components.css" />
     <link href="css/Global.css" rel="stylesheet" />
     <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="Custom-js/NetworkMgmt.js"></script>
+    <style type="text/css">
+           .table {
+            width: 150% !important;
+            margin-bottom: 1rem;
+            color: #212529;
+            /* overflow-x: scroll; */
+        }
+    </style>
     <script type="text/javascript">
         $(function () {
             $("#sidemenu").load("SideMenu.aspx");
-            //$("#navbar").load("NavMenu.aspx");
+          
         });
     </script>
 </head>
@@ -36,7 +49,7 @@
                 <nav class="navbar navbar-expand-lg main-navbar">
                     <ul class="navbar-nav mr-3">
                         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+                       
                     </ul>
                     <ul class="navbar-nav navbar-right">
 

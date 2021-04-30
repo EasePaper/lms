@@ -178,3 +178,9 @@ card-footer,
     border-color: rgba(160, 175, 185, .15);
     background-clip: padding-box
 }
+
+html {
+   
+    max-width: 99% !important;
+    height: auto !important;
+}
