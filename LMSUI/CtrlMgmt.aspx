@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <title></title>
     <link href="css/Global.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -265,7 +265,7 @@ Label the data
 
                                 <div class="col-md-2 order-first order-sm-first order-md-last order-lg-last order-xl-last">
                                     <div class="row justify-content-end">
-                                        <button class="btn btn-Custom0 btn-xs fa-pull-right mx-1 mb-2" id="dropdownMenuButton9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled><i class="fa fa-pie-chart"></i></button>
+                                        <button class="btn btn-Custom0 btn-xs fa-pull-right mx-1 mb-2" id="dropdownMenuButton9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled><i class="fas fa-chart-line"></i></button>
                                         <button class="btn btn-Custom0 btn-xs fa-pull-right mx-1 mb-2" id="dropdownMenuButton10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled><i class="fa fa-map-marker"></i></button>
                                         <button class="btn btn-Custom0 btn-xs fa-pull-right mx-1 mb-2" id="dropdownMenuButton11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggle_full_screen();"><i id="fullscreen" class="fa fa-arrows-alt"></i></button>
                                     </div>
